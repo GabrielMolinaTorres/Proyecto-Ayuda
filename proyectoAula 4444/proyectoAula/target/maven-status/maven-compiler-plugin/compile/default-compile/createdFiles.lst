@@ -1,0 +1,10 @@
+logica\Material.class
+logica\OrdenTrabajo.class
+logica\Usuario.class
+logica\Factura.class
+interfaz\Gestionable.class
+logica\Cliente.class
+logica\EstadoOrden.class
+vista\GestionSistema.class
+logica\Persona.class
+logica\GestorOrden.class
