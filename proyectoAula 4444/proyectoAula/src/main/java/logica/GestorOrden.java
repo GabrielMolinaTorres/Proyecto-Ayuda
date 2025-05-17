@@ -13,6 +13,7 @@ public class GestorOrden implements Gestionable {
     private int ordenesHoy = 0;
     private LocalDate fechaUltimoRegistro = LocalDate.now();
     private final int limiteDiario = 10;
+    private Semaforo semaforo = new Semaforo();
 
     public GestorOrden() {
     // Las listas ya se inicializan al declararlas
@@ -200,6 +201,7 @@ public void MostrarOrdenesPendientes(){
             System.out.println("Serial: " + orden.getSerial());
             System.out.println("Fecha de creacion: " + orden.getFechaCreacion());
             System.out.println("Estado: " + orden.getEstado());
+            System.out.println("Color: " + semaforo.determinarColorDiasHabiles(orden.Getfechacreacion,orden.Getfechaentrega,fechaUltimoRegistro));
             System.out.println("Costo: $" + orden.getCostoTrabajo());
             System.out.println("----------");
         }
